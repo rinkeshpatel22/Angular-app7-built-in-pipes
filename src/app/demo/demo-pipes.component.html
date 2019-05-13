@@ -1,0 +1,22 @@
+<h2>Built-in Pipes Examples</h2>
+
+<h4>Original Text (Without Pipes) :</h4>
+<p>(currentDate) => <b>{{currentDate}}</b></p>
+
+<h4>Pipe</h4>
+<p>(currentDate | date) =>  <b>{{currentDate | date}}</b></p>
+
+<h4>Parameterized Pipe</h4>
+<p>(currentDate | date: "fullDate") =>  <b>{{currentDate | date: "fullDate"}}</b></p>
+<p>(currentDate | date: "dd/MM/yy") =>  <b>{{currentDate | date: "dd/MM/yy"}}</b></p>
+<p>(currentDate | date: "mediumTime") =>  <b>{{currentDate | date: "mediumTime"}}</b></p>
+
+<h4>Multiple Parameterized Pipe</h4>
+<p>(currentDate | date: "mediumTime" : "UTC") =>  <b>{{currentDate | date: "mediumTime" : "UTC"}}</b></p>
+<p>(currentDate | date: "mediumTime" : "GTM) =>  <b>{{currentDate | date: "mediumTime" : "GTM"}}</b></p>
+
+<h4>Chained Pipe</h4>
+<p>(currentDate | date: "fullDate" | uppercase) =>  <b>{{currentDate | date: "fullDate" | uppercase}}</b></p>
+<p>(currentDate | date: "fullDate" | lowercase) =>  <b>{{currentDate | date: "fullDate" | lowercase}}</b></p>
+
+
